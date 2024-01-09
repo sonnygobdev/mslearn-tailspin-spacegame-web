@@ -8,6 +8,9 @@ variables:
     buildConfiguration: 'Release'
   
 steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
   - task: UseDotNet@2
     displayName: 'Use .NET SDK 6.x'
     inputs:
